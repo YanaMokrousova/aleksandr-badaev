@@ -624,7 +624,18 @@ html { scroll-padding-top: 90px; }
 }
         /* ===== АДАПТИВ ===== */
      
-        @media (max-width: 768px) {
+        @media (max-width: 768px) { 
+            select {
+                -webkit-appearance: none !important;
+                appearance: none !important;
+                border-radius: 10px;
+                pading: 15px;
+                font-size: 16px;
+                border: 1px solid #d1d5db;
+                background: white;
+                width: 100%;
+            }
+            }
         .badges { gap: 10px; }
         .badge { font-size: 13px; padding: 10px 16px; }
         .hero-pretitle { font-size: 12px; padding: 6px 16px; }
