@@ -1,1 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог — Александр Бадаев</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ШАПКА -->
+    <header class="blog-header">
+        <div class="header-inner">
+            <a href="../index.html" class="back-link">← На сайт</a>
+            <div class="logo">БАДАЕВ <span class="accent">БЛОГ</span></div>
+            <nav>
+                <a href="#featured">Главное</a>
+                <a href="#articles">Статьи</a>
+                <a href="#footer">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- FEATURED POST -->
+    <section id="featured" class="featured">
+        <div class="featured-inner">
+            <div class="featured-text">
+                <span class="label">ГЛАВНАЯ СТАТЬЯ</span>
+                <h1>Как подготовиться к первому триатлону: полное руководство</h1>
+                <div class="meta">
+                    <span>15 августа 2026</span>
+                    <span>Александр Бадаев</span>
+                    <span>0 комментариев</span>
+                </div>
+                <p>Триатлон — это не просто соревнование, это образ жизни. В этой статье я расскажу, с чего начать подготовку, как распределить нагрузки и не выгореть за 3 месяца до старта.</p>
+                <span class="tag">ТРИАТЛОН</span>
+                <a href="article-1.html" class="btn-details">Читать далее</a>
+            </div>
+            <div class="featured-image">
+                <img src="featured.jpg" alt="Триатлон">
+            </div>
+        </div>
+    </section>
+
+    <!-- ФИЛЬТРЫ КАТЕГОРИЙ -->
+    <section class="filters">
+        <div class="filters-inner">
+            <button class="filter-btn active" data-filter="all">Все</button>
+            <button class="filter-btn" data-filter="nutrition">Питание</button>
+            <button class="filter-btn" data-filter="training">Тренировки</button>
+            <button class="filter-btn" data-filter="recovery">Восстановление</button>
+            <button class="filter-btn" data-filter="gear">Экипировка</button>
+        </div>
+    </section>
+
+    <!-- СЕТКА СТАТЕЙ -->
+    <section id="articles" class="articles">
+        <div class="articles-grid">
+            
+            <article class="article-card" data-category="nutrition">
+                <div class="card-image">
+                    <img src="images/article1.jpg" alt="Питание">
+                    <span class="card-tag">ПИТАНИЕ</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span>10 августа 2026</span>
+                        <span>0 комментариев</span>
+                    </div>
+                    <h3>Что есть перед утренней тренировкой</h3>
+                    <p>Правильный завтрак — залог эффективной тренировки. Разбираем лучшие варианты...</p>
+                    <a href="article-2.html" class="read-more">Читать →</a>
+                </div>
+            </article>
+
+            <article class="article-card" data-category="training">
+                <div class="card-image">
+                    <img src="images/article2.jpg" alt="Тренировка">
+                    <span class="card-tag">ТРЕНИРОВКИ</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span>5 августа 2026</span>
+                        <span>0 комментариев</span>
+                    </div>
+                    <h3>5 ошибок начинающих триатлетов</h3>
+                    <p>Эти ошибки совершают почти все новички. Узнай, как их избежать...</p>
+                    <a href="article-3.html" class="read-more">Читать →</a>
+                </div>
+            </article>
+
+            <article class="article-card" data-category="recovery">
+                <div class="card-image">
+                    <img src="images/article3.jpg" alt="Восстановление">
+                    <span class="card-tag">ВОССТАНОВЛЕНИЕ</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span>1 августа 2026</span>
+                        <span>0 комментариев</span>
+                    </div>
+                    <h3>Как правильно восстанавливаться после длинных дистанций</h3>
+                    <p>Восстановление — это не отдых, а часть тренировочного процесса...</p>
+                    <a href="article-4.html" class="read-more">Читать →</a>
+                </div>
+            </article>
+
+            <article class="article-card" data-category="gear">
+                <div class="card-image">
+                    <img src="images/article4.jpg" alt="Экипировка">
+                    <span class="card-tag">ЭКИПИРОВКА</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span>28 июля 2026</span>
+                        <span>0 комментариев</span>
+                    </div>
+                    <h3>Как выбрать гидрокостюм для плавания</h3>
+                    <p>Правильный гидрокостюм экономит силы и улучшает результат на плавании...</p>
+                    <a href="article-5.html" class="read-more">Читать →</a>
+                </div>
+            </article>
+
+            <article class="article-card" data-category="training">
+                <div class="card-image">
+                    <img src="images/article5.jpg" alt="Бег">
+                    <span class="card-tag">ТРЕНИРОВКИ</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span>20 июля 2026</span>
+                        <span>0 комментариев</span>
+                    </div>
+                    <h3>Интервальный бег: как бегать быстрее</h3>
+                    <p>Интервальные тренировки — лучший способ увеличить скорость...</p>
+                    <a href="article-6.html" class="read-more">Читать →</a>
+                </div>
+            </article>
+
+            <article class="article-card" data-category="nutrition">
+                <div class="card-image">
+                    <img src="images/article6.jpg" alt="Вода">
+                    <span class="card-tag">ПИТАНИЕ</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span>15 июля 2026</span>
+                        <span>0 комментариев</span>
+                    </div>
+                    <h3>Водный баланс во время соревнований</h3>
+                    <p>Обезвоживание снижает результат на 20%. Как пить правильно...</p>
+                    <a href="article-7.html" class="read-more">Читать →</a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- ФУТЕР -->
+    <footer id="footer" class="blog-footer">
+        <div class="footer-inner">
+            <div class="footer-col">
+                <h4>О блоге</h4>
+                <p>Блог Александра Бадаева — тренера по триатлону. Делюсь опытом подготовки к соревнованиям, советами по питанию и экипировке.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Контакты</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-link" title="Instagram">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" title="Telegram">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.94z"/>
+                        </svg>
+                    </a>
+                </div>
+                <p class="phone">+7 (999) 123-45-67</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Александр Бадаев. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Фильтры категорий
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const articles = document.querySelectorAll('.article-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.dataset.filter;
+
+                articles.forEach(article => {
+                    if (filter === 'all' || article.dataset.category === filter) {
+                        article.style.display = 'block';
+                    } else {
+                        article.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
 
